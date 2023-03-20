@@ -1,12 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - current file
- * 
- * Return: nothing
+ * main - prints the name of the file it was compiled from
+ *
+ * Return: Everything worked ok
  */
+
 int main(void)
 {
-	printf("%s\n",__FILE__);
-	return (1);
+	printf("%s\n", __BASE_FILE__);
+	return (0);
 }
